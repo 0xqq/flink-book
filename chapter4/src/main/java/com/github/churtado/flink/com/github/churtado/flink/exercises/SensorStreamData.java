@@ -2,6 +2,8 @@ package com.github.churtado.flink.com.github.churtado.flink.exercises;
 
 import com.github.churtado.flink.util.*;
 import org.apache.flink.api.common.functions.MapFunction;
+import org.apache.flink.api.common.typeinfo.TypeHint;
+import org.apache.flink.api.common.typeinfo.TypeInformation;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.TimeCharacteristic;
@@ -53,10 +55,17 @@ public class SensorStreamData {
                     }
                 }).timeWindow(Time.seconds(5))
                 .apply(new AverageFunction())
+                .returns(SensorReading.class) // returning type hints
                 .map(new MapFunction<SensorReading, Tuple3<String, Double, Long>>() {
                     @Override
                     public Tuple3<String, Double, Long> map(SensorReading sensorReading) throws Exception {
                         return new Tuple3<String, Double, Long>(sensorReading.id, sensorReading.temperature, sensorReading.timestamp);
+                    }
+                })
+                .returns(new TypeHint<Tuple3<String, Double, Long>>() { // returning type hints
+                    @Override
+                    public TypeInformation<Tuple3<String, Double, Long>> getTypeInfo() {
+                        return super.getTypeInfo();
                     }
                 })
                 .print();
