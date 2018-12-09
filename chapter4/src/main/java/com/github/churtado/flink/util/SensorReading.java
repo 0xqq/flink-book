@@ -11,7 +11,7 @@ public class SensorReading {
         timestamp = Calendar.getInstance().getTimeInMillis();
     }
 
-    String id;
-    Long timestamp;
-    Double temperature;
+    public String id;
+    public Long timestamp;
+    public Double temperature;
 }

@@ -1,6 +1,5 @@
 package com.github.churtado.flink.util;
 
-import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction;
 
 import java.util.Random;
@@ -8,13 +7,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class SensorSource extends RichParallelSourceFunction<Tuple3<Double, Long, String>> {
+public class SensorSource extends RichParallelSourceFunction<SensorReading> {
 
     private volatile boolean running = true;
     private static final int numSensors = 10;
 
     @Override
-    public void run(final SourceContext<Tuple3<Double, Long, String>> sourceContext) throws Exception {
+    public void run(final SourceContext<SensorReading> sourceContext) throws Exception {
 
         // initialize random number generator
         final Random rand = new Random();
@@ -34,7 +33,7 @@ public class SensorSource extends RichParallelSourceFunction<Tuple3<Double, Long
 
                     // sensor id
                     String id = "sensor_" + i;
-                    final Tuple3<Double, Long, String> event = new Tuple3(reading ,cur, id);
+                    final SensorReading event = new SensorReading(id, reading);
 
                     exec.schedule(() -> {
                         sourceContext.collect(event);
