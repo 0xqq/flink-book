@@ -36,7 +36,12 @@ public class SensorStreamData {
         DataStream<SensorReading> celsius = readings.map(new MapFunction<SensorReading, SensorReading>() {
             @Override
             public SensorReading map(SensorReading reading) throws Exception {
-                return new SensorReading(reading.id, (reading.temperature - 32) * (5.0 / 9.0));
+                SensorReading result = new SensorReading();
+                result.id = reading.id;
+                result.timestamp = reading.timestamp;
+                result.temperature = (reading.temperature - 32) * (5.0 / 9.0);
+
+                return result;
             }
         });
 
@@ -74,7 +79,10 @@ public class SensorStreamData {
             }
 
             Double avg = sum / count;
-            SensorReading result = new SensorReading(s, avg);
+            SensorReading result = new SensorReading();
+            result.id = s;
+            result.timestamp = timeWindow.getEnd();
+            result.temperature = avg;
             collector.collect(result);
 
         }

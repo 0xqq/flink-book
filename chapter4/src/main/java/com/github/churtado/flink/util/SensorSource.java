@@ -2,6 +2,7 @@ package com.github.churtado.flink.util;
 
 import org.apache.flink.streaming.api.functions.source.RichParallelSourceFunction;
 
+import java.util.Calendar;
 import java.util.Random;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -33,7 +34,10 @@ public class SensorSource extends RichParallelSourceFunction<SensorReading> {
 
                     // sensor id
                     String id = "sensor_" + i;
-                    final SensorReading event = new SensorReading(id, reading);
+                    SensorReading event = new SensorReading();
+                    event.id = id;
+                    event.timestamp = Calendar.getInstance().getTimeInMillis();
+                    event.temperature = reading;
 
                     exec.schedule(() -> {
                         sourceContext.collect(event);
