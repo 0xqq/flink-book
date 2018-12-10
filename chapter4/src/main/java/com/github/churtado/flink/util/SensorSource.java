@@ -30,7 +30,7 @@ public class SensorSource extends RichParallelSourceFunction<SensorReading> {
                     long cur = System.currentTimeMillis();
 
                     // update the sensor value
-                    Double reading = rand.nextDouble();
+                    Double reading = rand.nextDouble() * 100;
 
                     // sensor id
                     String id = "sensor_" + i;
