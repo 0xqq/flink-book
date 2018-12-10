@@ -1,9 +1,10 @@
 package com.github.churtado.flink.com.github.churtado.flink.exercises;
 
 import com.github.churtado.flink.util.*;
+import org.apache.flink.api.common.functions.FilterFunction;
+import org.apache.flink.api.common.functions.FlatMapFunction;
 import org.apache.flink.api.common.functions.MapFunction;
-import org.apache.flink.api.common.typeinfo.TypeHint;
-import org.apache.flink.api.common.typeinfo.TypeInformation;
+import org.apache.flink.api.common.functions.ReduceFunction;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.api.java.tuple.Tuple3;
 import org.apache.flink.streaming.api.TimeCharacteristic;
@@ -47,28 +48,91 @@ public class SensorStreamData {
             }
         });
 
+        // this is to test flatmap and filter
+//        celsius
+//                .flatMap(new FlatMapFunction<SensorReading, String>() {
+//                    @Override
+//                    public void flatMap(SensorReading sensorReading, Collector<String> collector) throws Exception {
+//                        String[] results = sensorReading.id.split("_");
+//                        for(String result: results) {
+//                            if(result != "sensor") {
+//                                collector.collect(result);
+//                            }
+//                        }
+//                    }
+//                }).returns(String.class).print();
+
+        // this is to output the 5-second window averages
+//        celsius
+//                .keyBy(new KeySelector<SensorReading, String>() {
+//                    @Override
+//                    public String getKey(SensorReading reading) throws Exception {
+//                        return reading.id;
+//                    }
+//                }).timeWindow(Time.seconds(5))
+//                .apply(new AverageFunction())
+//                .map(new MapFunction<SensorReading, Tuple3<String, Double, Long>>() {
+//                    @Override
+//                    public Tuple3<String, Double, Long> map(SensorReading sensorReading) throws Exception {
+//                        return new Tuple3<String, Double, Long>(sensorReading.id, sensorReading.temperature, sensorReading.timestamp);
+//                    }
+//                })
+//                .print();
+
+        // showing rolling aggregators by key, remember, you need a KeyedStream
+//        celsius
+//                .keyBy(new KeySelector<SensorReading, String>() {
+//                    @Override
+//                    public String getKey(SensorReading reading) throws Exception {
+//                        return reading.id;
+//                    }
+//                }).map(new MapFunction<SensorReading, Tuple3<String, Double, Long>>() {
+//                    @Override
+//                    public Tuple3<String, Double, Long> map(SensorReading sensorReading) throws Exception {
+//                        return new Tuple3<String, Double, Long>(sensorReading.id, sensorReading.temperature, sensorReading.timestamp);
+//                    }
+//                }).keyBy(0).sum(2) // maintains a rolling sum for each of the 10 keys
+//                .print();
+
+        // showing the reduce function, which is a generalization of rolling aggregators like the above. Calculating max
         celsius
+                .filter(new FilterFunction<SensorReading>() {
+                    @Override
+                    public boolean filter(SensorReading sensorReading) throws Exception {
+                        return sensorReading.id.equals("sensor_9");
+                    }
+                })
                 .keyBy(new KeySelector<SensorReading, String>() {
                     @Override
                     public String getKey(SensorReading reading) throws Exception {
                         return reading.id;
                     }
-                }).timeWindow(Time.seconds(5))
-                .apply(new AverageFunction())
-                .returns(SensorReading.class) // returning type hints
+                })
+                .reduce(new ReduceFunction<SensorReading>() {
+                    @Override
+                    public SensorReading reduce(SensorReading r1, SensorReading r2) throws Exception {
+
+                        Double highestTemp = Math.max(r1.temperature, r2.temperature);
+                        SensorReading result = new SensorReading();
+                        result.id = r1.id;
+                        result.temperature = highestTemp;
+
+                        if(highestTemp == r1.temperature) {
+                            result.timestamp = r1.timestamp;
+                        } else {
+                            result.timestamp = r2.timestamp;
+                        }
+
+                        return result;
+
+                    }
+                })
                 .map(new MapFunction<SensorReading, Tuple3<String, Double, Long>>() {
                     @Override
                     public Tuple3<String, Double, Long> map(SensorReading sensorReading) throws Exception {
                         return new Tuple3<String, Double, Long>(sensorReading.id, sensorReading.temperature, sensorReading.timestamp);
                     }
-                })
-                .returns(new TypeHint<Tuple3<String, Double, Long>>() { // returning type hints
-                    @Override
-                    public TypeInformation<Tuple3<String, Double, Long>> getTypeInfo() {
-                        return super.getTypeInfo();
-                    }
-                })
-                .print();
+                }).print();
 
         env.execute();
 
