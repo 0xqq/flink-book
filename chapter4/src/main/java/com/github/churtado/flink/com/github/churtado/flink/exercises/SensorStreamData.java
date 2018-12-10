@@ -132,7 +132,8 @@ public class SensorStreamData {
                     public Tuple3<String, Double, Long> map(SensorReading sensorReading) throws Exception {
                         return new Tuple3<String, Double, Long>(sensorReading.id, sensorReading.temperature, sensorReading.timestamp);
                     }
-                }).print();
+                })
+                .print();
 
         env.execute();
 
