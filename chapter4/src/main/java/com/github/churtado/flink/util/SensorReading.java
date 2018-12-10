@@ -10,4 +10,5 @@ public class SensorReading {
     public String id;
     public Long timestamp;
     public Double temperature;
+    public String location;
 }
