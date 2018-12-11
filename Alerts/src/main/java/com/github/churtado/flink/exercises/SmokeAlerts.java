@@ -34,7 +34,7 @@ public class SmokeAlerts {
 
         DataStream<SmokeLevel> smokeLevel = env
                 .addSource(new SmokeLevelSource())
-                .setParallelism(1);
+                .setParallelism(1); // warning: no checkpointing
 
         // key sensors by id
         KeyedStream<SensorReading, String> keyed = readings
