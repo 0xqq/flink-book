@@ -27,13 +27,16 @@ public class SplitStreamExample {
         env.setParallelism(4); // creates 4 copies of everything, but you can set this for specific operators
         // setting the parallelism of an operator overrides the above setting
 
-        // configure the watermark interval
+        // configure the watermark interval at every second in this case
         env.getConfig().setAutoWatermarkInterval(1000L);
 
         DataStream<SensorReading> readings = env
                 .addSource(new SensorSource())
                 // assign timestamps and watermarks required for event time
-                .assignTimestampsAndWatermarks(new SensorTimeAssigner(Time.seconds(5))); // you need this if using event time
+                // .assignTimestampsAndWatermarks(new SensorTimeAssigner(Time.seconds(5)))
+                //.assignTimestampsAndWatermarks(new PeriodicAssigner()); // if you want to create a periodic assigner
+                .assignTimestampsAndWatermarks(new PunctuatedAssigner());
+                //assingAscendingWatermarks not available???
 
         readings.filter(new FilterFunction<SensorReading>() {
             @Override
