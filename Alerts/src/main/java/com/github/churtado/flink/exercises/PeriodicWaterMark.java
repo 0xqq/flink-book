@@ -89,53 +89,52 @@ public class PeriodicWaterMark {
     static class TempIncreaseAlertFunction extends  KeyedProcessFunction<String, SensorReading, String> {
 
         // hold temperature of last sensor reading
-        private transient ValueState<SensorReading> lastReading;
-
-        private transient ValueState<Double> lastTemp;
+        private transient ValueState<Double> lastTemperature;
+        private transient ValueState<Long> currentTimer;
 
         @Override
         public void open(Configuration config) throws Exception {
 
-            ValueStateDescriptor<SensorReading> descriptor =
-                    new ValueStateDescriptor<>(
-                            "lastReading", // the state name
-                            TypeInformation.of(new TypeHint<SensorReading>() {}) // type information
-                    );
-
-            lastTemp = getRuntimeContext().getState(new ValueStateDescriptor<>("lastTemp", Types.DOUBLE));
-
             // hold temperature of last sensor reading
-            lastReading = getRuntimeContext()
-                    .getState(descriptor);
+            lastTemperature = getRuntimeContext().getState(new ValueStateDescriptor<>("lastTemperature", TypeInformation.of(new TypeHint<Double>() {})));
 
             // hold timestamp of currently active timer
-//            currentTimer = getRuntimeContext().getState(new ValueStateDescriptor<>("timer", Types.LONG));
+            currentTimer = getRuntimeContext().getState(new ValueStateDescriptor<>("timer", TypeInformation.of(new TypeHint<Long>() {})));
 
         }
 
         @Override
         public void processElement(SensorReading input, Context context, Collector<String> collector) throws Exception {
-            SensorReading prevReading = null;
 
-            if(lastReading.value() != null) {
-                prevReading = lastReading.value(); // assign it to use it below
-                lastReading.update(input); // update in case it's empty for next round
+            Double prevTemperature = 0.0;
+            if (lastTemperature.value() != null) {
+                prevTemperature = lastTemperature.value();
             }
+            lastTemperature.update(input.temperature);
 
             // get previous temperature
-            if(prevReading.temperature == 0.0 || input.temperature < prevReading.temperature) {
+            if(prevTemperature == 0.0 || input.temperature < prevTemperature) {
                 // temperature decreased. Invalidate current timer
-//                currentTimer.update(0L);
-            } else if (input.temperature > prevReading.temperature /*&& currentTimer.value() == 0*/) {
-//                // temperature increased and we have not set a timer yet
+                currentTimer.update(0L);
+                // collector.collect("temperature decreased from " + prevTemperature + " to " + input.temperature);
+            } else if (input.temperature > prevTemperature && currentTimer.value() == 0) {
+                // temperature increased and we have not set a timer yet
                 // set processing time timer for now + 1 second
-//                Long timerTs = context.timerService().currentProcessingTime() +1 ;
-//                context.timerService().registerEventTimeTimer(timerTs);
+                Long timerTs = context.timerService().currentProcessingTime() +1 ;
+                context.timerService().registerProcessingTimeTimer(timerTs);
                 // remember current timer
-//                currentTimer.update(timerTs);
-//            }
+                currentTimer.update(timerTs);
+                // collector.collect("set a timer because temperature increased once");
+            }
 
-            collector.collect("stuff is going on");
+        }
+
+        @Override
+        public void onTimer(long timestamp, OnTimerContext context, Collector<String> out) throws Exception {
+            if(timestamp == currentTimer.value()) {
+                out.collect("Temperature of sensor " + context.getCurrentKey() + " monotonically increased for 1 second");
+                currentTimer.update(0L);
+            }
         }
     }
 }
