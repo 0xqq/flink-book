@@ -36,32 +36,27 @@ public class SmokeAlerts {
                 .addSource(new SmokeLevelSource())
                 .setParallelism(1); // warning: no checkpointing
 
+        // this example uses co flatmap to join 2 streams, one with temp, and the other
+        // with a smoke level stream. When the smoke level and temp is too high, then it emits an alarm
         // key sensors by id
-        KeyedStream<SensorReading, String> keyed = readings
+        readings
                 .keyBy(new KeySelector<SensorReading, String>() {
                     @Override
                     public String getKey(SensorReading sensorReading) throws Exception {
                         return sensorReading.id;
                     }
-                });
-
-        DataStream<Alert> alerts = keyed
+                })
+                // connecting temp readings with smoke level
                 .connect(smokeLevel.broadcast())
-                .flatMap(new RaiseAlertFlatmap());
-
-//        readings.map(new MapFunction<SensorReading, Double>() {
-//            @Override
-//            public Double map(SensorReading sensorReading) throws Exception {
-//                return sensorReading.temperature;
-//            }
-//        }).print();
-
-        alerts.map(new MapFunction<Alert, Tuple2<String, Long>>() {
-            @Override
-            public Tuple2<String, Long> map(Alert alert) throws Exception {
-                return new Tuple2<>(alert.message, alert.timestamp);
-            }
-        }).print();
+                // raising alerts on temp and smoke level via co flatmap
+                .flatMap(new RaiseAlertFlatmap())
+                // mapping to tuple and outputting
+                .map(new MapFunction<Alert, Tuple2<String, Long>>() {
+                    @Override
+                    public Tuple2<String, Long> map(Alert alert) throws Exception {
+                        return new Tuple2<>(alert.message, alert.timestamp);
+                    }
+                }).print();
 
         env.execute();
     }

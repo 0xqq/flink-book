@@ -9,7 +9,6 @@ import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.DataStream;
-import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.streaming.api.windowing.time.Time;
@@ -36,33 +35,13 @@ public class PeriodicWaterMark {
                 // assign timestamps and watermarks required for event time
                 .assignTimestampsAndWatermarks(new SensorTimeAssigner(Time.seconds(5))); // you need this if using event time
 
-        DataStream<SmokeLevel> smokeLevel = env
-                .addSource(new SmokeLevelSource())
-                .setParallelism(1); // warning: no checkpointing
-
-        // key sensors by id
-        KeyedStream<SensorReading, String> keyed = readings
-                .keyBy(new KeySelector<SensorReading, String>() {
-                    @Override
-                    public String getKey(SensorReading sensorReading) throws Exception {
-                        return sensorReading.id;
-                    }
-                });
-
-        DataStream<Alert> alerts = keyed
-                .connect(smokeLevel.broadcast())
-                .flatMap(new SmokeAlerts.RaiseAlertFlatmap());
-
         // using a process function to emit warnings if temp monotonically increases within a second
-        KeyedStream<SensorReading, String> keyedReadings = readings.keyBy(new KeySelector<SensorReading, String>() {
+        readings.keyBy(new KeySelector<SensorReading, String>() {
             @Override
             public String getKey(SensorReading sensorReading) throws Exception {
                 return sensorReading.id;
             }
-        });
-
-        keyedReadings
-                .process(new TempIncreaseAlertFunction())
+        }).process(new TempIncreaseAlertFunction())
                 .print();
 
         env.execute();
