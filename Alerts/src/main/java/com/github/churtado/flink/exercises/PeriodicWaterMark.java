@@ -5,7 +5,6 @@ import org.apache.flink.api.common.state.ValueState;
 import org.apache.flink.api.common.state.ValueStateDescriptor;
 import org.apache.flink.api.common.typeinfo.TypeHint;
 import org.apache.flink.api.common.typeinfo.TypeInformation;
-import org.apache.flink.api.common.typeinfo.Types;
 import org.apache.flink.api.java.functions.KeySelector;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.TimeCharacteristic;
@@ -13,11 +12,8 @@ import org.apache.flink.streaming.api.datastream.DataStream;
 import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
 import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
-import org.apache.flink.streaming.api.functions.ProcessFunction;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.util.Collector;
-import org.w3c.dom.TypeInfo;
-import sun.awt.SunHints;
 
 public class PeriodicWaterMark {
 
@@ -56,20 +52,6 @@ public class PeriodicWaterMark {
         DataStream<Alert> alerts = keyed
                 .connect(smokeLevel.broadcast())
                 .flatMap(new SmokeAlerts.RaiseAlertFlatmap());
-
-//        readings.map(new MapFunction<SensorReading, Double>() {
-//            @Override
-//            public Double map(SensorReading sensorReading) throws Exception {
-//                return sensorReading.temperature;
-//            }
-//        }).print();
-
-//        alerts.map(new MapFunction<Alert, Tuple2<String, Long>>() {
-//            @Override
-//            public Tuple2<String, Long> map(Alert alert) throws Exception {
-//                return new Tuple2<>(alert.message, alert.timestamp);
-//            }
-//        }).print();
 
         // using a process function to emit warnings if temp monotonically increases within a second
         KeyedStream<SensorReading, String> keyedReadings = readings.keyBy(new KeySelector<SensorReading, String>() {
