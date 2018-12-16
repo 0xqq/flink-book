@@ -14,13 +14,21 @@ import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.ConnectedStreams;
 import org.apache.flink.streaming.api.datastream.DataStream;
-import org.apache.flink.streaming.api.datastream.KeyedStream;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
-import org.apache.flink.streaming.api.functions.KeyedProcessFunction;
 import org.apache.flink.streaming.api.functions.co.CoProcessFunction;
 import org.apache.flink.streaming.api.windowing.time.Time;
 import org.apache.flink.util.Collector;
-import org.apache.flink.util.OutputTag;
+
+/**
+ * This piece of code is trippy. We set a co-process function that uses 2 streams:
+ *
+ * 1 stream just has a type of flag value that determines which sensor will be allowed to emit values
+ * and for what amount of time. You can see only 2 sensors in the actual code
+ *
+ * The other stream is our data. Using a co process function we use the first stream to
+ * allow the system to emit the sensor readings for a certain period of time, and afterwards
+ * the stream is disabled.
+ */
 
 public class CoProcess {
 
@@ -51,7 +59,7 @@ public class CoProcess {
         ConnectedStreams<SensorReading, Tuple2<String, Long>> connectedStream =
                 readings.connect(filterSwitches);
 
-        DataStream<SensorReading> forwardedReadings = connectedStream
+        connectedStream
                 .keyBy(new KeySelector<SensorReading, Object>() {
                     @Override
                     public Object getKey(SensorReading sensorReading) throws Exception {
@@ -63,14 +71,12 @@ public class CoProcess {
                         return stringLongTuple2.f0;
                     }
                 })
-            .process(new ReadingFilter());
-
-        readings.map(new MapFunction<SensorReading, Tuple3<String, Double, Long>>() {
-            @Override
-            public Tuple3<String, Double, Long> map(SensorReading sensorReading) throws Exception {
-                return new Tuple3<>(sensorReading.id, sensorReading.temperature, sensorReading.timestamp);
-            }
-        }).print();
+            .process(new ReadingFilter()).map(new MapFunction<SensorReading, Tuple3<String, Double, Long>>() {
+                    @Override
+                    public Tuple3<String, Double, Long> map(SensorReading sensorReading) throws Exception {
+                        return new Tuple3<>(sensorReading.id, sensorReading.temperature, sensorReading.timestamp);
+                    }
+                }).print();
 
         env.execute();
     }
@@ -92,7 +98,7 @@ public class CoProcess {
 
         @Override
         public void processElement1(SensorReading sensorReading, Context context, Collector<SensorReading> collector) throws Exception {
-            if(forwardingEnabled.value()) {
+            if(forwardingEnabled.value() != null && forwardingEnabled.value() == true) {
                 collector.collect(sensorReading);
             }
         }
