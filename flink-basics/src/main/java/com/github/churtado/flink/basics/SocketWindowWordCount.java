@@ -19,10 +19,10 @@ public class SocketWindowWordCount {
     public static void main(String[] args) throws Exception {
 
         // the port to connect to
-        final int port;
+        final int port = 9000;
         try {
             final ParameterTool params = ParameterTool.fromArgs(args);
-            port = params.getInt("port");
+            // port = params.getInt("port");
         } catch (Exception e) {
             System.err.println("No port specified. Please run 'SocketWindowWordCount --port <port>'");
             return;
