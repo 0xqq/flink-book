@@ -29,7 +29,7 @@
       <module name="kafka-consumer-elasticsearch" target="1.8" />
       <module name="kafka-producer-twitter" target="1.8" />
       <module name="kafka-streams-filter-tweets" target="1.8" />
-      <module name="quickstart" target="1.8" />
+      <module name="stream-processing" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
