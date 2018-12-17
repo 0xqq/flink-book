@@ -21,6 +21,10 @@ import org.apache.flink.util.Collector;
  *
  */
 
+// mvn clean package
+// com.github.churtado.flink.basics.SensorStreamData  on the submit page
+// tail -f log/flink-*.out  to view ouput
+
 public class SensorStreamData {
 
     public static void main(String[] args) throws Exception {
@@ -37,7 +41,8 @@ public class SensorStreamData {
 
         DataStream<SensorReading> readings = env
                 .addSource(new SensorSource())
-                .setParallelism(4) // ingest through a source
+                .setParallelism(1) // just so I can run this on my local cluster
+                //.setParallelism(4) // ingest through a source
                 // assign timestamps and watermarks required for event time
                 .assignTimestampsAndWatermarks(new SensorTimeAssigner(Time.seconds(5))); // you need this if using event time
 
