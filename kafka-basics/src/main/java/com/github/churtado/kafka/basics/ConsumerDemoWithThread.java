@@ -27,7 +27,7 @@ public class ConsumerDemoWithThread {
     private void run(){
         Logger logger = LoggerFactory.getLogger(ConsumerDemoWithThread.class.getName());
 
-        String bootstrapServers = "192.168.1.130:9092";
+        String bootstrapServers = "localhost:9092";
         String groupId = "my-sixth-application";
         String topic = "first_topic";
 

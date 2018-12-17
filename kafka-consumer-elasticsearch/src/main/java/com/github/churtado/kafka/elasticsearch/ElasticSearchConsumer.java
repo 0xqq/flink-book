@@ -30,9 +30,9 @@ public class ElasticSearchConsumer {
 
     public static RestHighLevelClient createClient(){
 
-        String hostname = "kafka-course-5599481925.eu-west-1.bonsaisearch.net";
-        String username = "crz4wytjh7";
-        String password = "ct2qznadzn";
+        String hostname = "https://njw5m5roy4:7380lr3jdw@kafka-course-5599481925.eu-west-1.bonsaisearch.net";
+        String username = "njw5m5roy4";
+        String password = "7380lr3jdw";
 
         // remove credentialsProvider if you run a local ES
         final CredentialsProvider credentialsProvider = new BasicCredentialsProvider();
@@ -52,7 +52,7 @@ public class ElasticSearchConsumer {
 
     public static KafkaConsumer<String, String> createConsumer(String topic){
 
-        String bootstrapServers = "127.0.0.1:9092";
+        String bootstrapServers = "localhost:9092";
         String groupId = "kafka-demo-elasticsearch";
 
         // create consumer configs
