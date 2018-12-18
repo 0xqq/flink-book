@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="8729e939-be0f-4b43-b440-99f97c122627" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-configuration/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink-configuration/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-processfunction/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink-processfunction/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flink-window/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/flink-configuration/target/" />
@@ -36,17 +38,82 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="102" lean-forward="true" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
+            <state relative-caret-position="15">
+              <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-basics/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="211" selection-end-column="15" />
+              <folding>
+                <element signature="n#dependencies#0;n#project#0;n#!!top" />
+                <element signature="n#build#0;n#project#0;n#!!top" />
+                <element signature="n#profiles#0;n#project#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-configuration/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="146" column="15" selection-start-line="146" selection-start-column="15" selection-end-line="146" selection-end-column="15" />
+              <folding>
+                <element signature="n#build#0;n#project#0;n#!!top" />
+                <element signature="n#profiles#0;n#project#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/flink-processfunction/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="146" column="15" selection-start-line="146" selection-start-column="15" selection-end-line="146" selection-end-column="15" />
+              <folding>
+                <element signature="n#build#0;n#project#0;n#!!top" />
+                <element signature="n#profiles#0;n#project#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/flink-window/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="465">
+              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+              <folding>
+                <element signature="n#build#0;n#project#0;n#!!top" />
+                <element signature="n#profiles#0;n#project#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-producer-twitter/src/main/java/com/github/churtado/kafka/twitter/TwitterProducer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,8 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorTupleSource.java" />
-        <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorTupleTimeAssigner.java" />
         <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorTimeAssigner.java" />
         <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/SensorStreamTupleData.java" />
         <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorSource.java" />
@@ -118,15 +183,17 @@
         <option value="$PROJECT_DIR$/kafka-basics/src/main/java/com/github/churtado/kafka/basics/ProducerDemo.java" />
         <option value="$PROJECT_DIR$/kafka-basics/src/main/java/com/github/churtado/kafka/basics/ProducerDemoKeys.java" />
         <option value="$PROJECT_DIR$/kafka-basics/src/main/java/com/github/churtado/kafka/basics/ProducerDemoWithCallBack.java" />
-        <option value="$PROJECT_DIR$/kafka-producer-twitter/src/main/java/com/github/churtado/kafka/twitter/TwitterProducer.java" />
         <option value="$PROJECT_DIR$/kafka-consumer-elasticsearch/src/main/java/com/github/churtado/kafka/elasticsearch/ElasticSearchConsumer.java" />
         <option value="$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md" />
         <option value="$PROJECT_DIR$/kafka-streams-filter-tweets/src/main/java/com/github/churtado/kafka/streams/StreamsFilterTweets.java" />
-        <option value="$PROJECT_DIR$/flink-window/pom.xml" />
         <option value="$PROJECT_DIR$/flink-basics/pom.xml" />
         <option value="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SocketWindowWordCount.java" />
         <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java" />
+        <option value="$PROJECT_DIR$/kafka-producer-twitter/src/main/java/com/github/churtado/kafka/twitter/TwitterProducer.java" />
+        <option value="$PROJECT_DIR$/flink-configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/flink-processfunction/pom.xml" />
+        <option value="$PROJECT_DIR$/flink-window/pom.xml" />
       </list>
     </option>
   </component>
@@ -151,58 +218,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
               <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-configuration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-processfunction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basics" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-window" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545090215761" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545137199349" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -229,7 +281,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SocketWindowWordCount">
+  <component name="RunManager" selected="Application.TwitterProducer">
     <configuration name="ElasticSearchConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.churtado.kafka.elasticsearch.ElasticSearchConsumer" />
       <module name="kafka-consumer-elasticsearch" />
@@ -297,11 +349,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TwitterProducer" />
         <item itemvalue="Application.SocketWindowWordCount" />
         <item itemvalue="Application.SensorStreamData" />
         <item itemvalue="Application.StreamsFilterTweets" />
         <item itemvalue="Application.ElasticSearchConsumer" />
-        <item itemvalue="Application.TwitterProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -418,10 +470,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1924" height="945" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1924" height="1050" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.23906083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.24172892" />
       <window_info id="Structure" order="1" sideWeight="0.5016835" side_tool="true" weight="0.60618997" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -430,7 +481,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32687652" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32864866" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32439023" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -580,9 +631,6 @@
     <entry file="file://$PROJECT_DIR$/basicstuff/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/ConnectStream.java" />
     <entry file="file://$PROJECT_DIR$/basicstuff/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/SensorStreamData.java" />
     <entry file="file://$PROJECT_DIR$/basicstuff/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/UnionStreamData.java" />
-    <entry file="file://$PROJECT_DIR$/flink-configuration/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-configuration/src/main/java/com/github/churtado/flink/configuration/util.java" />
     <entry file="file://$PROJECT_DIR$/flink-configuration/src/main/java/com/github/churtado/flink/configuration/util/Alert.java">
       <provider selected="true" editor-type-id="text-editor" />
@@ -622,9 +670,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-processfunction/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/flink-configuration/src/main/java/com/github/churtado/flink/configuration/PeriodicWaterMark.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -791,16 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-producer-twitter/src/main/java/com/github/churtado/kafka/twitter/TwitterProducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/src/main/java/com/github/churtado/kafka/elasticsearch/ElasticSearchConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
@@ -842,13 +877,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-window/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="84" column="12" selection-start-line="30" selection-start-column="4" selection-end-line="84" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/ConnectStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -871,18 +899,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-basics/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="211" column="15" selection-start-line="211" selection-start-column="15" selection-end-line="211" selection-end-column="15" />
-          <folding>
-            <element signature="n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#build#0;n#project#0;n#!!top" />
-            <element signature="n#profiles#0;n#project#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SocketWindowWordCount.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -895,19 +911,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="102" lean-forward="true" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-producer-twitter/src/main/java/com/github/churtado/kafka/twitter/TwitterProducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="29" column="72" selection-start-line="29" selection-start-column="72" selection-end-line="29" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-basics/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="211" selection-end-column="15" />
+          <folding>
+            <element signature="n#dependencies#0;n#project#0;n#!!top" />
+            <element signature="n#build#0;n#project#0;n#!!top" />
+            <element signature="n#profiles#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-configuration/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="146" column="15" selection-start-line="146" selection-start-column="15" selection-end-line="146" selection-end-column="15" />
+          <folding>
+            <element signature="n#build#0;n#project#0;n#!!top" />
+            <element signature="n#profiles#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-processfunction/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="146" column="15" selection-start-line="146" selection-start-column="15" selection-end-line="146" selection-end-column="15" />
+          <folding>
+            <element signature="n#build#0;n#project#0;n#!!top" />
+            <element signature="n#profiles#0;n#project#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flink-window/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+          <folding>
+            <element signature="n#build#0;n#project#0;n#!!top" />
+            <element signature="n#profiles#0;n#project#0;n#!!top" />
           </folding>
         </state>
       </provider>
