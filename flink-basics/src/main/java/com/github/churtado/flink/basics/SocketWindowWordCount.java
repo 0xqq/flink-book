@@ -12,6 +12,8 @@ import org.apache.flink.util.Collector;
 
 /**
  * Feed data via netcat: nc -l 9000
+ * Check output via terminal: tail -f flink logs
+ * com.github.churtado.flink.basics.SocketWindowWordCount
  */
 
 public class SocketWindowWordCount {
