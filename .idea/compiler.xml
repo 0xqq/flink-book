@@ -11,6 +11,7 @@
         <module name="flink-basics" />
         <module name="flink-configuration" />
         <module name="flink-processfunction" />
+        <module name="flink-window" />
         <module name="kafka-basics" />
         <module name="kafka-connect" />
         <module name="kafka-consumer-elasticsearch" />
@@ -24,6 +25,7 @@
       <module name="flink-basics" target="1.8" />
       <module name="flink-configuration" target="1.8" />
       <module name="flink-processfunction" target="1.8" />
+      <module name="flink-window" target="1.8" />
       <module name="kafka-basics" target="8" />
       <module name="kafka-connect" target="1.8" />
       <module name="kafka-consumer-elasticsearch" target="1.8" />

@@ -19,7 +19,7 @@ public class ConsumerDemoAssignSeek {
 
         Logger logger = LoggerFactory.getLogger(ConsumerDemoAssignSeek.class.getName());
 
-        String bootstrapServers = "192.168.1.130:9092";
+        String bootstrapServers = "localhost:9092";
         String groupId = "my-seventh-application";
         String topic = "first_topic";
 

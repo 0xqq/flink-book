@@ -25,10 +25,10 @@ public class TwitterProducer {
 
     Logger logger  = LoggerFactory.getLogger(TwitterProducer.class.getName());
 
-    String consumerKey = "UBIM2CvzaBp0TxPPdfJFYYUW8";
-    String consumerSecret = "K64XU6V7bWufP5dNvJTWcRs6P3P3BobndrVhmlrxpRtVDgnzcY";
-    String token = "29465706-yUDto0pDOVhsa4Xo8WCfIMb9XLT1tDKAO0BkXn0B9";
-    String secret = "2iQXmtTDOEYk7GNlrgx4ngZcNzvhJEh4MzOIDfbRq2HiZ";
+    String consumerKey = "pDeZUouXfJqLH0vCWwgUkr97W";
+    String consumerSecret = "wJJBsp4CWBPYz3DKacQmLyLl7MFrh3iIALKvSBOtVwU6P0h57b";
+    String token = "29465706-lvSmejfBWsfBQUWXuilLZJcDVmV685ZxTYyXtPpDK";
+    String secret = "a5UiDB0EnVcIVp3Z26nqCRyPQ9BGUjrpPGLDEJfczR8W0";
     List<String> terms = Lists.newArrayList("kimchi");
 
     public TwitterProducer(){
@@ -116,7 +116,7 @@ public class TwitterProducer {
     }
 
     public KafkaProducer<String, String>createKafkaProducer(){
-        String bootstrapServers = "192.168.1.130:9092";
+        String bootstrapServers = "localhost:9092";
 
         // create Producer properties
         Properties properties = new Properties();

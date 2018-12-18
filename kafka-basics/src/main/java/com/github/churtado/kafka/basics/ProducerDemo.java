@@ -11,7 +11,7 @@ public class ProducerDemo {
 
     public static void main(String[] args) {
 
-        String bootstrapServers = "192.168.1.130:9092";
+        String bootstrapServers = "localhost:9092";
 
         // create Producer properties
         Properties properties = new Properties();
