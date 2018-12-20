@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8729e939-be0f-4b43-b440-99f97c122627" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/mockito/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-basics/java-basics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basics/java-basics.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java-basics/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/java-basics/pom.xml" afterDir="false" />
@@ -30,21 +28,67 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/quickstart$PeriodicWaterMark.ic" NAME="PeriodicWaterMark Coverage Results" MODIFIED="1544880534999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.github.churtado.flink.exercises.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/quickstart$CalculatorTests.ic" NAME="CalculatorTests Coverage Results" MODIFIED="1545341790875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.github.churtado.java.junit.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/quickstart$CountdownLatchExample.ic" NAME="CountdownLatchExample Coverage Results" MODIFIED="1545338078107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.github.churtado.java.threads.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/quickstart$PeriodicWaterMark.ic" NAME="PeriodicWaterMark Coverage Results" MODIFIED="1544880534999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.github.churtado.flink.exercises.*</FILTER>
+    </SUITE>
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="209" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="783127283">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+          <entry key="XML" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="502" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/mockito/FirstTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#208#222#0" />
+                <element signature="method#test1#0;class#FirstTest#0" />
+                <element signature="e#532#559#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-basics/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -67,7 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorReading.java" />
         <option value="$PROJECT_DIR$/Alerts/src/main/java/com/github/churtado/flink/exercises/SmokeAlerts.java" />
         <option value="$PROJECT_DIR$/Alerts/src/main/java/com/github/churtado/flink/exercises/PeriodicWaterMark.java" />
         <option value="$PROJECT_DIR$/Alerts/src/main/java/com/github/churtado/flink/exercises/SideOutput.java" />
@@ -118,6 +161,7 @@
         <option value="$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/junit/Calculator.java" />
         <option value="$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/junit/CalculatorTests.java" />
         <option value="$PROJECT_DIR$/java-basics/pom.xml" />
+        <option value="$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/mockito/FirstTest.java" />
       </list>
     </option>
   </component>
@@ -129,10 +173,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="4" />
-    <option name="y" value="27" />
-    <option name="width" value="1924" />
-    <option name="height" value="945" />
+    <option name="x" value="1" />
+    <option name="y" value="23" />
+    <option name="width" value="1606" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -148,63 +192,53 @@
         <subPane>
           <expand>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
               <item name="java-basics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="java-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
               <item name="java-basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
               <item name="java-basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
               <item name="java-basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
               <item name="java-basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="churtado" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
+              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
               <item name="java-basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="threads" type="462c0819:PsiDirectoryNode" />
+              <item name="churtado" type="462c0819:PsiDirectoryNode" />
+              <item name="mockito" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -213,7 +247,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545343523297" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545346642546" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -243,20 +277,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CalculatorTests">
-    <configuration name="SensorStreamData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.churtado.flink.basics.SensorStreamData" />
-      <module name="flink-basics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.churtado.flink.basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.FirstTest">
     <configuration name="SocketWindowWordCount" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.churtado.flink.basics.SocketWindowWordCount" />
       <module name="flink-basics" />
@@ -298,6 +319,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-basics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.churtado.mockito.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.github.churtado.mockito" />
+      <option name="MAIN_CLASS_NAME" value="com.github.churtado.mockito.FirstTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserRepositoryImplFileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java-basics" />
       <extension name="coverage">
@@ -312,13 +347,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.SocketWindowWordCount" />
+      <item itemvalue="JUnit.CalculatorTests" />
+      <item itemvalue="JUnit.CountdownLatchExample" />
+      <item itemvalue="JUnit.UserRepositoryImplFileTest" />
+      <item itemvalue="JUnit.FirstTest" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.CalculatorTests" />
         <item itemvalue="JUnit.CountdownLatchExample" />
         <item itemvalue="JUnit.UserRepositoryImplFileTest" />
         <item itemvalue="Application.SocketWindowWordCount" />
-        <item itemvalue="Application.SensorStreamData" />
       </list>
     </recent_temporary>
   </component>
@@ -456,41 +498,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 36m 11s.xml">
-      <configuration name="CountdownLatchExample" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 36m 37s.xml">
-      <configuration name="CountdownLatchExample" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 37m 45s.xml">
-      <configuration name="CountdownLatchExample" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 49m 54s.xml">
-      <configuration name="CountdownLatchExample" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryImplFileTest - 2018.12.20 at 21h 20m 05s.xml">
-      <configuration name="UserRepositoryImplFileTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserRepositoryImplFileTest - 2018.12.20 at 21h 22m 39s.xml">
-      <configuration name="UserRepositoryImplFileTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CountdownLatchExample - 2018.12.20 at 21h 32m 41s.xml">
-      <configuration name="CountdownLatchExample" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CalculatorTests - 2018.12.20 at 21h 36m 05s.xml">
-      <configuration name="CalculatorTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CalculatorTests - 2018.12.20 at 21h 36m 32s.xml">
       <configuration name="CalculatorTests" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CalculatorTests - 2018.12.20 at 21h 39m 58s.xml">
       <configuration name="CalculatorTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="FirstTest - 2018.12.20 at 22h 38m 08s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.12.20 at 22h 39m 10s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.12.20 at 22h 45m 58s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.12.20 at 22h 50m 07s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.12.20 at 22h 54m 01s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.12.20 at 22h 54m 27s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.12.20 at 22h 55m 02s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FirstTest - 2018.12.20 at 22h 56m 28s.xml">
+      <configuration name="FirstTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1924" height="1050" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.25133404" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.34191704" />
       <window_info id="Structure" order="1" sideWeight="0.5016835" side_tool="true" weight="0.60618997" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -499,8 +542,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32687652" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2918919" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3243243" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29065302" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32394367" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -508,6 +551,7 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.33170733" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32756758" />
+      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -518,6 +562,9 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.26947704" />
     </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fucking got it through my head that I had to update state in order for it to be populated" />
@@ -646,9 +693,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flink-configuration/src/main/java/com/github/churtado/flink/configuration/util/Alert.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/stuff/src/main/java/com/github/churtado/flink/exercises/PeriodicWaterMark.java" />
     <entry file="file://$PROJECT_DIR$/stuff/src/main/java/com/github/churtado/flink/exercises/CoProcess.java" />
     <entry file="file://$PROJECT_DIR$/stuff/src/main/java/com/github/churtado/flink/exercises/SideOutput.java" />
@@ -679,9 +723,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -692,9 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,9 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,9 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-600">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,9 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-355">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -746,9 +775,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-690">
           <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -785,9 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,9 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="29" column="72" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -805,11 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="44" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#939#955#0" expanded="true" />
-            <element signature="e#1070#1086#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,9 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="254">
           <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -827,9 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -837,9 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="25" column="30" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,9 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -857,9 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="75" column="43" selection-start-line="75" selection-start-column="43" selection-end-line="75" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,9 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="394">
           <caret line="100" selection-start-line="100" selection-end-line="100" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -884,9 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="31" column="86" selection-start-line="31" selection-start-column="86" selection-end-line="31" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -915,9 +909,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -949,11 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="65" column="27" lean-forward="true" selection-start-line="65" selection-start-column="27" selection-end-line="65" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2641#2642#0" expanded="true" />
-            <element signature="e#2692#2693#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -961,25 +947,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/package-info.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.0/junit-jupiter-api-5.3.0.jar!/org/junit/jupiter/api/Assertions.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="233" selection-start-line="233" selection-end-line="233" />
-          <folding>
-            <element signature="e#8083#8084#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/package-info.java" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.0/junit-jupiter-api-5.3.0.jar!/org/junit/jupiter/api/Assertions.class" />
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1000,27 +972,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/junit/UserRepositoryImplFileTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#622#623#0" expanded="true" />
-            <element signature="e#658#659#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#844#845#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/junit/UserRepositoryImplFileTest.java" />
     <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/junit/Calculator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="e#135#136#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,20 +984,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#159#164#0" />
-            <element signature="method#addsTwoNumber#0;class#CalculatorTests#0" />
-            <element signature="e#514#558#0" />
-            <element signature="method#add#0;class#CalculatorTests#0" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/java-basics/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="21" selection-end-line="64" selection-end-column="21" />
+        <state relative-caret-position="569">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/mockito/FirstTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#208#222#0" />
+            <element signature="method#test1#0;class#FirstTest#0" />
+            <element signature="e#532#559#0" />
+          </folding>
         </state>
       </provider>
     </entry>
