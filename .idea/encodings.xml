@@ -6,6 +6,7 @@
     <file url="file://$PROJECT_DIR$/flink-configuration" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-processfunction" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/flink-window" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/java-basics" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-connect" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-consumer-elasticsearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/kafka-producer-twitter" charset="UTF-8" />

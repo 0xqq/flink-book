@@ -32,6 +32,7 @@ under the License.
 		<module>kafka-producer-twitter</module>
 		<module>kafka-streams-filter-tweets</module>
         <module>flink-window</module>
+        <module>java-basics</module>
     </modules>
 	<packaging>pom</packaging>
 

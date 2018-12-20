@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8729e939-be0f-4b43-b440-99f97c122627" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basics/java-basics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basics/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/threads/CountdownLatchExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/flink-configuration/target/" />
@@ -17,6 +31,7 @@
     <ignored path="$PROJECT_DIR$/kafka-producer-twitter/target/" />
     <ignored path="$PROJECT_DIR$/kafka-streams-filter-tweets/target/" />
     <ignored path="$PROJECT_DIR$/flink-window/target/" />
+    <ignored path="$PROJECT_DIR$/java-basics/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +42,9 @@
     <SUITE FILE_PATH="coverage/quickstart$PeriodicWaterMark.ic" NAME="PeriodicWaterMark Coverage Results" MODIFIED="1544880534999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.github.churtado.flink.exercises.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/quickstart$CountdownLatchExample.ic" NAME="CountdownLatchExample Coverage Results" MODIFIED="1545338078107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.github.churtado.java.threads.*</FILTER>
+    </SUITE>
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="240" />
@@ -36,17 +54,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="102" lean-forward="true" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
+            <state relative-caret-position="105">
+              <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/java-basics/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java">
+        <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/threads/CountdownLatchExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+            <state relative-caret-position="440">
+              <caret line="103" column="98" selection-start-line="103" selection-start-column="98" selection-end-line="103" selection-end-column="98" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,6 +86,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -76,8 +104,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorTupleSource.java" />
-        <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorTupleTimeAssigner.java" />
         <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorTimeAssigner.java" />
         <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/SensorStreamTupleData.java" />
         <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/util/SensorSource.java" />
@@ -125,8 +151,10 @@
         <option value="$PROJECT_DIR$/flink-window/pom.xml" />
         <option value="$PROJECT_DIR$/flink-basics/pom.xml" />
         <option value="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SocketWindowWordCount.java" />
-        <option value="$PROJECT_DIR$/readme.md" />
         <option value="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java" />
+        <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/java-basics/pom.xml" />
+        <option value="$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/threads/CountdownLatchExample.java" />
       </list>
     </option>
   </component>
@@ -163,37 +191,37 @@
             <path>
               <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
               <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="java-basics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
               <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="java-basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
               <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="java-basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
               <item name="quickstart" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="java-basics" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basics" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="quickstart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="quickstart" type="462c0819:PsiDirectoryNode" />
+              <item name="java-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="threads" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -202,7 +230,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545090215761" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545339251336" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -229,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SocketWindowWordCount">
+  <component name="RunManager" selected="JUnit.CountdownLatchExample">
     <configuration name="ElasticSearchConsumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.churtado.kafka.elasticsearch.ElasticSearchConsumer" />
       <module name="kafka-consumer-elasticsearch" />
@@ -282,26 +310,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwitterProducer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.churtado.kafka.twitter.TwitterProducer" />
-      <module name="kafka-producer-twitter" />
+    <configuration name="CountdownLatchExample" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-basics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.churtado.kafka.twitter.*" />
+          <option name="PATTERN" value="com.github.churtado.java.threads.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.github.churtado.java.threads" />
+      <option name="MAIN_CLASS_NAME" value="com.github.churtado.java.threads.CountdownLatchExample" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CountdownLatchExample" />
         <item itemvalue="Application.SocketWindowWordCount" />
         <item itemvalue="Application.SensorStreamData" />
         <item itemvalue="Application.StreamsFilterTweets" />
         <item itemvalue="Application.ElasticSearchConsumer" />
-        <item itemvalue="Application.TwitterProducer" />
       </list>
     </recent_temporary>
   </component>
@@ -414,14 +443,38 @@
       <option name="project" value="LOCAL" />
       <updated>1545089712967</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="documenting some other stuff">
+      <created>1545090229266</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1545090229266</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 34m 42s.xml">
+      <configuration name="CountdownLatchExample" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 36m 11s.xml">
+      <configuration name="CountdownLatchExample" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 36m 37s.xml">
+      <configuration name="CountdownLatchExample" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 37m 45s.xml">
+      <configuration name="CountdownLatchExample" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CountdownLatchExample - 2018.12.20 at 20h 49m 54s.xml">
+      <configuration name="CountdownLatchExample" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1924" height="945" extended-state="6" />
+    <frame x="0" y="0" width="1924" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.23906083" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.23906083" />
       <window_info id="Structure" order="1" sideWeight="0.5016835" side_tool="true" weight="0.60618997" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -430,8 +483,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32687652" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32439023" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2918919" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3243243" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -447,7 +500,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32977587" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.2764141" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
@@ -465,7 +518,8 @@
     <MESSAGE value="Fixed port to 9000" />
     <MESSAGE value="stuff" />
     <MESSAGE value="added readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="added readme" />
+    <MESSAGE value="documenting some other stuff" />
+    <option name="LAST_COMMIT_MESSAGE" value="documenting some other stuff" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -493,6 +547,18 @@
           <line>118</line>
           <properties />
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/threads/CountdownLatchExample.java</url>
+          <line>80</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/threads/CountdownLatchExample.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -562,22 +628,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.7.0/flink-streaming-java_2.11-1.7.0.jar!/org/apache/flink/streaming/runtime/io/StreamInputProcessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/flink/flink-streaming-java_2.11/1.7.0/flink-streaming-java_2.11-1.7.0.jar!/org/apache/flink/streaming/api/operators/co/KeyedCoProcessOperator.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/quickstart/BatchJob.java" />
-    <entry file="file://$PROJECT_DIR$/basicstuff/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/ConnectStream.java" />
     <entry file="file://$PROJECT_DIR$/basicstuff/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/SensorStreamData.java" />
     <entry file="file://$PROJECT_DIR$/basicstuff/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/UnionStreamData.java" />
     <entry file="file://$PROJECT_DIR$/flink-configuration/pom.xml">
@@ -895,17 +945,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
+    <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="102" lean-forward="true" selection-start-line="2" selection-start-column="102" selection-end-line="2" selection-end-column="102" />
+        <state relative-caret-position="60">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorStreamData.java">
+    <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        <state relative-caret-position="105">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/package-info.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-basics/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.3.0/junit-jupiter-api-5.3.0.jar!/org/junit/jupiter/api/Assertions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="233" selection-start-line="233" selection-end-line="233" />
+          <folding>
+            <element signature="e#8083#8084#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java-basics/src/main/java/com/github/churtado/java/threads/CountdownLatchExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="103" column="98" selection-start-line="103" selection-start-column="98" selection-end-line="103" selection-end-column="98" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
