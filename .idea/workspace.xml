@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8729e939-be0f-4b43-b440-99f97c122627" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kafka-connect/connectors/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kafka-connect/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-connect/connectors/connect-standalone.properties" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-connect/connectors/connect-standalone.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-connect/connectors/twitter.properties" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-connect/connectors/twitter.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/flink-configuration/target/" />
@@ -45,19 +48,37 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/src/main/java/com/github/churtado/kafka/elasticsearch/ElasticSearchConsumer.java">
+        <entry file="file://$PROJECT_DIR$/kafka-connect/readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="55" column="50" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="50" />
+            <state relative-caret-position="405">
+              <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-connect/connectors/run.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-connect/connectors/twitter.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md">
+        <entry file="file://$PROJECT_DIR$/kafka-connect/connectors/connect-standalone.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+            <state relative-caret-position="600">
+              <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
             </state>
           </provider>
         </entry>
@@ -86,10 +107,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Alerts/src/main/java/com/github/churtado/flink/exercises/CoProcess.java" />
-        <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/ConnectStream.java" />
-        <option value="$PROJECT_DIR$/chapter4/src/main/java/com/github/churtado/flink/com/github/churtado/flink/exercises/SensorStreamData.java" />
-        <option value="$PROJECT_DIR$/flink-configuration/src/main/java/PeriodicWaterMark.java" />
         <option value="$PROJECT_DIR$/flink-configuration/src/main/java/com/github/churtado/flink/configuration/util/Alert.java" />
         <option value="$PROJECT_DIR$/flink-configuration/src/main/java/com/github/churtado/flink/configuration/PeriodicWaterMark.java" />
         <option value="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SensorReading.java" />
@@ -137,6 +154,10 @@
         <option value="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorSource.java" />
         <option value="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/WindowingExample.java" />
         <option value="$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md" />
+        <option value="$PROJECT_DIR$/kafka-connect/connectors/run.sh" />
+        <option value="$PROJECT_DIR$/kafka-connect/readme.md" />
+        <option value="$PROJECT_DIR$/kafka-connect/connectors/twitter.properties" />
+        <option value="$PROJECT_DIR$/kafka-connect/connectors/connect-standalone.properties" />
       </list>
     </option>
   </component>
@@ -173,37 +194,13 @@
             <path>
               <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-connect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="elasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-connect" type="462c0819:PsiDirectoryNode" />
+              <item name="connectors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -213,7 +210,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value=".window&#9;PSI&#9;JAVA://com.github.churtado.flink.basics.SocketWindowWordCount" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545402421372" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545404600092" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -481,7 +478,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545353830645</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="added elasticsearch documentation. Will need to add kafka notes to the code.">
+      <created>1545402464968</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1545402464968</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -571,7 +575,8 @@
     <MESSAGE value="added some basic examples using mockito" />
     <MESSAGE value="added a basic example showing a tumbling event time window operator used with an aggregate function" />
     <MESSAGE value="added example using offsets" />
-    <option name="LAST_COMMIT_MESSAGE" value="added example using offsets" />
+    <MESSAGE value="added elasticsearch documentation. Will need to add kafka notes to the code." />
+    <option name="LAST_COMMIT_MESSAGE" value="added elasticsearch documentation. Will need to add kafka notes to the code." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -680,21 +685,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/util/SensorTimeAssigner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/util/SensorReading.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stuff/src/main/java/com/github/churtado/flink/exercises/SmokeAlerts.java" />
     <entry file="file://$PROJECT_DIR$/flink-processfunction/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1013,13 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-connect/connectors/connect-standalone.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/src/main/java/com/github/churtado/kafka/elasticsearch/ElasticSearchConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1031,6 +1014,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-connect/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="24" lean-forward="true" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-connect/connectors/run.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-connect/connectors/twitter.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="59" lean-forward="true" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-connect/connectors/connect-standalone.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="72" selection-start-line="40" selection-start-column="72" selection-end-line="40" selection-end-column="72" />
         </state>
       </provider>
     </entry>
