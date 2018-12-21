@@ -50,6 +50,11 @@ public class WindowingExample {
 
         keyed
                 .window(TumblingEventTimeWindows.of(Time.seconds(1)))
+                // .timeWindow(Time.seconds(1))  // shortcut for window.(TumblingEventTimeWindows.of(size))
+
+                // 00:15:00, 01:15:00, 02:15:00 because of 15 minute offset
+                //.timeWindow(Time.hours(1), Time.minutes(15)) // group readings in 1 hour windows with 15 min offset
+
                 .aggregate(new AggregateFunction <SensorReading, AverageAccumulator, Double>() {
 
                     @Override
