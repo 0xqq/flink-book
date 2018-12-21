@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8729e939-be0f-4b43-b440-99f97c122627" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sfd/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfd/sfd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/WindowingExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorReading.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorTimeAssigner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-window/flink-window.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/flink-window/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfd/sfd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/flink-window.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/WindowingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/WindowingExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorReading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorTimeAssigner.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorTimeAssigner.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/flink-configuration/target/" />
@@ -70,8 +63,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="878" />
-          <entry key="PLAIN_TEXT" value="39" />
+          <entry key="JAVA" value="965" />
+          <entry key="PLAIN_TEXT" value="188" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
@@ -80,10 +73,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/WindowingExample.java">
+        <entry file="file://$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/WindowingExample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="51" column="67" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
+            <state relative-caret-position="257">
+              <caret line="55" column="117" selection-start-line="55" selection-start-column="117" selection-end-line="55" selection-end-column="117" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2338#2339#0" expanded="true" />
@@ -254,7 +247,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value=".window&#9;PSI&#9;JAVA://com.github.churtado.flink.basics.SocketWindowWordCount" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545353412940" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545353868892" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -287,7 +280,7 @@
   <component name="RunManager" selected="Application.WindowingExample">
     <configuration name="WindowingExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.churtado.flink.window.WindowingExample" />
-      <module name="sfd" />
+      <module name="flink-window" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.github.churtado.flink.window.*" />
@@ -508,7 +501,21 @@
       <option name="project" value="LOCAL" />
       <updated>1545346676900</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added a basic example showing a tumbling event time window operator used with an aggregate function">
+      <created>1545353477574</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1545353477574</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added example using offsets">
+      <created>1545353830645</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1545353830645</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -545,7 +552,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.2360515" />
       <window_info id="Structure" order="1" sideWeight="0.5016835" side_tool="true" weight="0.60618997" />
@@ -556,7 +562,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32687652" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.45198464" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26760563" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32394367" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -599,7 +605,9 @@
     <MESSAGE value="added some basic examples of multithreaded programming using latches" />
     <MESSAGE value="added basic junit unit testing examples" />
     <MESSAGE value="added some basic examples using mockito" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some basic examples using mockito" />
+    <MESSAGE value="added a basic example showing a tumbling event time window operator used with an aggregate function" />
+    <MESSAGE value="added example using offsets" />
+    <option name="LAST_COMMIT_MESSAGE" value="added example using offsets" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -999,7 +1007,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfd/pom.xml">
+    <entry file="file://$PROJECT_DIR$/flink-window/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="211" column="19" selection-start-line="211" selection-start-column="19" selection-end-line="211" selection-end-column="19" />
@@ -1048,19 +1056,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorSource.java">
+    <entry file="file://$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorSource.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorReading.java">
+    <entry file="file://$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorReading.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorTimeAssigner.java">
+    <entry file="file://$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorTimeAssigner.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/WindowingExample.java">
+    <entry file="file://$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/WindowingExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="51" column="67" selection-start-line="51" selection-start-column="67" selection-end-line="51" selection-end-column="67" />
+        <state relative-caret-position="257">
+          <caret line="55" column="117" selection-start-line="55" selection-start-column="117" selection-end-line="55" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2338#2339#0" expanded="true" />

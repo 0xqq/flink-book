@@ -5,13 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/flink-basics/flink-basics.iml" filepath="$PROJECT_DIR$/flink-basics/flink-basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-configuration/flink-configuration.iml" filepath="$PROJECT_DIR$/flink-configuration/flink-configuration.iml" />
       <module fileurl="file://$PROJECT_DIR$/flink-processfunction/flink-processfunction.iml" filepath="$PROJECT_DIR$/flink-processfunction/flink-processfunction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flink-window/flink-window.iml" filepath="$PROJECT_DIR$/flink-window/flink-window.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-basics/java-basics.iml" filepath="$PROJECT_DIR$/java-basics/java-basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-basics/kafka-basics.iml" filepath="$PROJECT_DIR$/kafka-basics/kafka-basics.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-connect/kafka-connect.iml" filepath="$PROJECT_DIR$/kafka-connect/kafka-connect.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/kafka-consumer-elasticsearch.iml" filepath="$PROJECT_DIR$/kafka-consumer-elasticsearch/kafka-consumer-elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-producer-twitter/kafka-producer-twitter.iml" filepath="$PROJECT_DIR$/kafka-producer-twitter/kafka-producer-twitter.iml" />
       <module fileurl="file://$PROJECT_DIR$/kafka-streams-filter-tweets/kafka-streams-filter-tweets.iml" filepath="$PROJECT_DIR$/kafka-streams-filter-tweets/kafka-streams-filter-tweets.iml" />
-      <module fileurl="file://$PROJECT_DIR$/sfd/sfd.iml" filepath="$PROJECT_DIR$/sfd/sfd.iml" />
       <module fileurl="file://$PROJECT_DIR$/stream-processing.iml" filepath="$PROJECT_DIR$/stream-processing.iml" />
     </modules>
   </component>
