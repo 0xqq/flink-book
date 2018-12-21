@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8729e939-be0f-4b43-b440-99f97c122627" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfd/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfd/sfd.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/flink-window.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/WindowingExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/WindowingExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorReading.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorReading.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorTimeAssigner.java" beforeDir="false" afterPath="$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/util/SensorTimeAssigner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/flink-configuration/target/" />
@@ -31,57 +26,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/quickstart$CalculatorTests.ic" NAME="CalculatorTests Coverage Results" MODIFIED="1545341790875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.github.churtado.java.junit.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/quickstart$CountdownLatchExample.ic" NAME="CountdownLatchExample Coverage Results" MODIFIED="1545338078107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>com.github.churtado.java.threads.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/quickstart$PeriodicWaterMark.ic" NAME="PeriodicWaterMark Coverage Results" MODIFIED="1544880534999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.github.churtado.flink.exercises.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/flink_book$FirstTest.ic" NAME="FirstTest Coverage Results" MODIFIED="1545346695664" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.github.churtado.mockito.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/quickstart$CalculatorTests.ic" NAME="CalculatorTests Coverage Results" MODIFIED="1545341790875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.github.churtado.java.junit.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/quickstart$CountdownLatchExample.ic" NAME="CountdownLatchExample Coverage Results" MODIFIED="1545338078107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.github.churtado.java.threads.*</FILTER>
+    </SUITE>
   </component>
   <component name="CoverageViewManager">
     <option name="myElementSize" value="209" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="783127283">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="9" />
-          <entry key="XML" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="965" />
-          <entry key="PLAIN_TEXT" value="188" />
-          <entry key="XML" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/WindowingExample.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/src/main/java/com/github/churtado/kafka/elasticsearch/ElasticSearchConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="55" column="117" selection-start-line="55" selection-start-column="117" selection-end-line="55" selection-end-column="117" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2338#2339#0" expanded="true" />
-                <element signature="e#2397#2398#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="195">
+              <caret line="55" column="50" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -142,7 +118,6 @@
         <option value="$PROJECT_DIR$/kafka-basics/src/main/java/com/github/churtado/kafka/basics/ProducerDemoWithCallBack.java" />
         <option value="$PROJECT_DIR$/kafka-producer-twitter/src/main/java/com/github/churtado/kafka/twitter/TwitterProducer.java" />
         <option value="$PROJECT_DIR$/kafka-consumer-elasticsearch/src/main/java/com/github/churtado/kafka/elasticsearch/ElasticSearchConsumer.java" />
-        <option value="$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md" />
         <option value="$PROJECT_DIR$/kafka-streams-filter-tweets/src/main/java/com/github/churtado/kafka/streams/StreamsFilterTweets.java" />
         <option value="$PROJECT_DIR$/flink-basics/pom.xml" />
         <option value="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/SocketWindowWordCount.java" />
@@ -161,6 +136,7 @@
         <option value="$PROJECT_DIR$/flink-basics/src/main/java/com/github/churtado/flink/basics/ConnectStream.java" />
         <option value="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/util/SensorSource.java" />
         <option value="$PROJECT_DIR$/sfd/src/main/java/com/github/churtado/flink/window/WindowingExample.java" />
+        <option value="$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md" />
       </list>
     </option>
   </component>
@@ -197,47 +173,37 @@
             <path>
               <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="flink-book" type="b2602c69:ProjectViewProjectNode" />
               <item name="flink-book" type="462c0819:PsiDirectoryNode" />
-              <item name="flink-basics" type="462c0819:PsiDirectoryNode" />
+              <item name="kafka-consumer-elasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basics" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="elasticsearch" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -247,7 +213,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value=".window&#9;PSI&#9;JAVA://com.github.churtado.flink.basics.SocketWindowWordCount" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545353868892" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545402421372" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -348,11 +314,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.WindowingExample" />
       <item itemvalue="JUnit.CalculatorTests" />
       <item itemvalue="JUnit.CountdownLatchExample" />
       <item itemvalue="JUnit.UserRepositoryImplFileTest" />
       <item itemvalue="JUnit.FirstTest" />
-      <item itemvalue="Application.WindowingExample" />
     </list>
     <recent_temporary>
       <list>
@@ -551,9 +517,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="24" width="1440" height="873" extended-state="6" />
+    <frame x="0" y="0" width="1924" height="1050" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.2360515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4983165" visible="true" weight="0.23852721" />
       <window_info id="Structure" order="1" sideWeight="0.5016835" side_tool="true" weight="0.60618997" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -571,7 +538,6 @@
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.33170733" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32756758" />
-      <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -581,10 +547,8 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" visible="true" weight="0.26895565" />
+      <window_info anchor="right" id="Maven Projects" order="9" />
     </layout>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fucking got it through my head that I had to update state in order for it to be populated" />
@@ -879,20 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/src/main/java/com/github/churtado/kafka/elasticsearch/ElasticSearchConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kafka-streams-filter-tweets/src/main/java/com/github/churtado/kafka/streams/StreamsFilterTweets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -955,18 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="569">
           <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flink-window/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="213" column="10" selection-start-line="213" selection-start-column="10" selection-end-line="213" selection-end-column="10" />
-          <folding>
-            <element signature="n#dependencies#0;n#project#0;n#!!top" />
-            <element signature="n#build#0;n#project#0;n#!!top" />
-            <element signature="n#profiles#0;n#project#0;n#!!top" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1067,13 +1005,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flink-window/src/main/java/com/github/churtado/flink/window/WindowingExample.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="291">
           <caret line="55" column="117" selection-start-line="55" selection-start-column="117" selection-end-line="55" selection-end-column="117" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2338#2339#0" expanded="true" />
-            <element signature="e#2397#2398#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-connect/connectors/connect-standalone.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="2" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/src/main/java/com/github/churtado/kafka/elasticsearch/ElasticSearchConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="55" column="50" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kafka-consumer-elasticsearch/readme.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
         </state>
       </provider>
     </entry>
