@@ -11,13 +11,13 @@
         <module name="flink-basics" />
         <module name="flink-configuration" />
         <module name="flink-processfunction" />
-        <module name="flink-window" />
         <module name="java-basics" />
         <module name="kafka-basics" />
         <module name="kafka-connect" />
         <module name="kafka-consumer-elasticsearch" />
         <module name="kafka-producer-twitter" />
         <module name="kafka-streams-filter-tweets" />
+        <module name="sfd" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -33,6 +33,7 @@
       <module name="kafka-consumer-elasticsearch" target="1.8" />
       <module name="kafka-producer-twitter" target="1.8" />
       <module name="kafka-streams-filter-tweets" target="1.8" />
+      <module name="sfd" target="1.8" />
       <module name="stream-processing" target="1.8" />
     </bytecodeTargetLevel>
   </component>
